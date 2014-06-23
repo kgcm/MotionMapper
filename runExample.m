@@ -70,7 +70,7 @@ fprintf(1,'Finding Postural Eigenmodes\n');
 vecs = vecs(:,1:parameters.numProjections);
 
 figure
-makeMultiComponentPlot_radon_fromVecs(vecs(:,1:25),25,thetas,pixels,[201 90]);
+makeMultiComponentPlot_radon_fromVecs(vecs(:,1:25),25,thetas,pixels,[size(means,1) size(means,2)]);
 caxis([-3e-3 3e-3])
 colorbar
 title('First 25 Postural Eigenmodes','fontsize',14,'fontweight','bold');
